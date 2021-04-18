@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="SimpleSSH.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleSSH"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid RequestedTheme="Default">
+        <TextBox x:Name="HostTextBox" HorizontalAlignment="Left" Margin="36,51,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,24,0,0" Text="Host" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="UserIDTextBox" HorizontalAlignment="Left" Margin="36,129,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,102,0,0" Text="User ID" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,179,0,0" Text="Password" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="33,203,0,0" VerticalAlignment="Top" Width="283"/>
+        <TextBox x:Name="KeyTextBox" HorizontalAlignment="Left" Margin="33,282,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="213"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,257,0,0" Text="Private Key" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="KeyFileBrowseButton" Content="Browse" Margin="251,282,0,0" VerticalAlignment="Top" Click="KeyFileBrowseButton_Click"/>
+        <Button x:Name="ConnectButton" Content="Connect" Margin="0,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="ConnectButton_Click"/>
+        <TextBox x:Name="CommandTextBox" HorizontalAlignment="Left" Margin="33,365,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="280"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,341,0,0" Text="Command" TextWrapping="Wrap" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
